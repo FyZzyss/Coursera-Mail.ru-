@@ -1,0 +1,10 @@
+{% if data %}
+{% for key, value in data.items %}
+    {{ method }} {{ key }}: {{ value }}
+    {% endfor %}
+{% endif %}
+{% if meta %}
+statement is {{ meta }}
+{% else %}
+statement is empty
+{% endif %}
